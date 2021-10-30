@@ -1,0 +1,69 @@
+/* :root{
+   --text-color: blue;
+   --text-background: yellow;
+ 
+}
+
+.test{
+    color:var(--text-color);
+    background-color: var(--text-background);
+} */
+
+/* We can set up variables to equal to a certain color and then we can reuse those variables. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    background-color: #cacaca;
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    /* to enable Flexbox we need to set the display property of the container to flex. Just by setting the display property to the parent container
+ the child elements have become the flex items. When we give the flex direction a value of row, the children will be organized horizontally, 
+column will organize them vertically.*/
+    
+
+    flex-direction: column; 
+    /* Row aligns items horizontally (along the x-axis).Column makes the boxes be stacked vertically. Column-reverse makes it go from bottom to top. 
+    row-reverse makes it go from right to left*/
+
+    justify-content: flex-start;
+
+    /* justify-content moves the boxes horizontally (along the x-axis). When we use 'center', it puts them in the middle of the screen, left to the left and right to the right. */
+
+    /* justify-content: space-between; */
+     /* Will make the boxes spread out as much as the container allows */
+
+    /* justify-content: space-around;  */
+     /* Will make the space between each box equal, adding a margin around each box to make the space the same for every box. */
+ 
+     
+
+     align-items: flex-start;
+     /* align-items property aligns items vertically (along the y-axis).  */
+
+     /* align-items: flex-start; */
+     /* This will make all the items start at the same height vertically even if they are not the same length  */
+}
+
+
+
+
+
+.item{
+    background-color: red;
+    color:#fff;
+    font-size: 35px;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* The padding is controlling how big the box that contains the numbers is.The margin is controlling the space between each box. */
+.items-3{
+    height: 150px;
+}
